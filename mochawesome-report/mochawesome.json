@@ -5,9 +5,9 @@
     "passes": 12,
     "pending": 0,
     "failures": 0,
-    "start": "2022-05-29T18:19:16.525Z",
-    "end": "2022-05-29T18:19:16.550Z",
-    "duration": 25,
+    "start": "2022-05-29T18:25:20.009Z",
+    "end": "2022-05-29T18:25:20.033Z",
+    "duration": 24,
     "testsRegistered": 12,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ab68ecd8-a8e6-462a-a6be-2da3efd64a19",
+      "uuid": "2bec6b0c-2915-49f6-a363-411a28f15dfc",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "65cb14c9-746b-45c0-a14f-ab10532b4c2c",
+          "uuid": "6176e96b-dee9-40d9-b970-e90b4d9ba913",
           "title": "User input format check",
           "fullFile": "/Users/brunoh/assignment/typescript_source/test.spec.ts",
           "file": "/typescript_source/test.spec.ts",
@@ -38,7 +38,7 @@
               "title": "should accept empty string",
               "fullTitle": "User input format check should accept empty string",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "assert.equal(convertor.hasCorrectFormat(\"\"), true, 'empty string');",
               "err": {},
-              "uuid": "7facdf23-f236-45cc-9d89-f4c883319970",
-              "parentUUID": "65cb14c9-746b-45c0-a14f-ab10532b4c2c",
+              "uuid": "742f232e-8447-4aa3-ba91-a84055167bb9",
+              "parentUUID": "6176e96b-dee9-40d9-b970-e90b4d9ba913",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should accept alphanumeric strings",
               "fullTitle": "User input format check should accept alphanumeric strings",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "assert.equal(convertor.hasCorrectFormat(\"a\"), true, '\\\"a\\\"');\nassert.equal(convertor.hasCorrectFormat(\"B\"), true, '\\\"B\\\"');\nassert.equal(convertor.hasCorrectFormat(\"4\"), true, '\\\"4\\\"');\nassert.equal(convertor.hasCorrectFormat(\"adacta\"), true, '\\\"adacta\\\"');\nassert.equal(convertor.hasCorrectFormat(\"ADACTA\"), true, '\\\"ADACTA\\\"');\nassert.equal(convertor.hasCorrectFormat(\"AdAcTa\"), true, '\\\"AdAcTa\\\"');\nassert.equal(convertor.hasCorrectFormat(\"A2d0a2C2Ta\"), true, '\\\"A2d0a2C2Ta\\\"');",
               "err": {},
-              "uuid": "bed34eb7-e020-43b9-aa8e-ed35fa6eba54",
-              "parentUUID": "65cb14c9-746b-45c0-a14f-ab10532b4c2c",
+              "uuid": "35d2d718-42a1-4234-8df9-015a56615518",
+              "parentUUID": "6176e96b-dee9-40d9-b970-e90b4d9ba913",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "should reject non-alphanumeric strings",
               "fullTitle": "User input format check should reject non-alphanumeric strings",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,28 +83,28 @@
               "context": null,
               "code": "assert.equal(convertor.hasCorrectFormat(\"?\"), false, '\\\"?\\\"');\nassert.equal(convertor.hasCorrectFormat(\"?!:\"), false, '\\\"?!:\\\"');\nassert.equal(convertor.hasCorrectFormat(\"B.\"), false, '\\\"B.\\\"');\nassert.equal(convertor.hasCorrectFormat(\",4\"), false, '\\\",4\\\"');\nassert.equal(convertor.hasCorrectFormat(\"a/dacta\"), false, '\\\"a/dacta\\\"');\nassert.equal(convertor.hasCorrectFormat(\"ADACT|A\"), false, '\\\"ADACT|A\\\"');\nassert.equal(convertor.hasCorrectFormat(\">AdAcTa\"), false, '\\\">AdAcTa\\\"');\nassert.equal(convertor.hasCorrectFormat(\"A2d0a2C2Ta<\"), false, '\\\"A2d0a2C2Ta<\\\"');\nassert.equal(convertor.hasCorrectFormat(\"A2d|}0{a(2C2Ta\"), false, '\\\"A2d|}0{a(2C2Ta\\\"');",
               "err": {},
-              "uuid": "b813a003-345d-468d-bb98-7d61ebd073ae",
-              "parentUUID": "65cb14c9-746b-45c0-a14f-ab10532b4c2c",
+              "uuid": "89a62e40-ec1d-4e72-b42c-d05244af3de6",
+              "parentUUID": "6176e96b-dee9-40d9-b970-e90b4d9ba913",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7facdf23-f236-45cc-9d89-f4c883319970",
-            "bed34eb7-e020-43b9-aa8e-ed35fa6eba54",
-            "b813a003-345d-468d-bb98-7d61ebd073ae"
+            "742f232e-8447-4aa3-ba91-a84055167bb9",
+            "35d2d718-42a1-4234-8df9-015a56615518",
+            "89a62e40-ec1d-4e72-b42c-d05244af3de6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "c65462b4-3e40-4a11-89fc-b466fe67acfc",
+          "uuid": "e612e5d6-9622-4173-9517-10437a6ef000",
           "title": "Letters transform check: lowercase to uppercase, uppercase to lowercase",
           "fullFile": "/Users/brunoh/assignment/typescript_source/test.spec.ts",
           "file": "/typescript_source/test.spec.ts",
@@ -124,15 +124,15 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"a\"), \"A\", '\"a\" => \"A\"');\nassert.equal(convertor.transformString(\"H\"), \"h\", '\"H\" => \"h\"');\nassert.equal(convertor.transformString(\"m\"), \"M\", '\"m\" => \"M\"');\nassert.equal(convertor.transformString(\"X\"), \"x\", '\"X\" => \"x\"');",
               "err": {},
-              "uuid": "a5a76243-a0c2-4215-bf19-a2511df959e0",
-              "parentUUID": "c65462b4-3e40-4a11-89fc-b466fe67acfc",
+              "uuid": "dc692f78-f520-45d1-96af-f4b104546eb2",
+              "parentUUID": "e612e5d6-9622-4173-9517-10437a6ef000",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a5a76243-a0c2-4215-bf19-a2511df959e0"
+            "dc692f78-f520-45d1-96af-f4b104546eb2"
           ],
           "failures": [],
           "pending": [],
@@ -143,7 +143,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "e190b33c-4dda-4a51-b443-f6e454de330d",
+          "uuid": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
           "title": "String transform check: reverse string, lowercase to uppercase, uppercase to lowercase, numbers not changed",
           "fullFile": "/Users/brunoh/assignment/typescript_source/test.spec.ts",
           "file": "/typescript_source/test.spec.ts",
@@ -163,8 +163,8 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"\"), \"\", '\"\" => \"\"');",
               "err": {},
-              "uuid": "56dc289f-7df0-422a-9efe-71643c947066",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "f6e44a95-ebd0-435b-b314-d25eea28c41c",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             },
@@ -181,8 +181,8 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"5\"), \"5\", '\"5\" => \"5\"');\nassert.equal(convertor.transformString(\"53327\"), \"72335\", '\"53327\" => \"72335\"');\nassert.equal(convertor.transformString(\"8752927635\"), \"5367292578\", '\"8752927635\" => \"5367292578\"');",
               "err": {},
-              "uuid": "07464f8d-580a-418d-9b7f-ac68c0692162",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "56972d51-882b-4fbf-8ac5-061cb9e5e73b",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"g\"), \"G\", '\"g\" => \"G\"');\nassert.equal(convertor.transformString(\"qwertyu\"), \"UYTREWQ\", '\"qwertyu\" => \"UYTREWQ\"');\nassert.equal(convertor.transformString(\"asdfghjklzxcv\"), \"VCXZLKJHGFDSA\", '\"asdfghjklzxcv\" => \"VCXZLKJHGFDSA\"');",
               "err": {},
-              "uuid": "3efebd9e-73fc-4bda-885e-fff6a7647b4e",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "a00b13cc-1035-4cbc-984d-b5fc7ce11854",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             },
@@ -217,8 +217,8 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"H\"), \"h\", '\"H\" => \"h\"');\nassert.equal(convertor.transformString(\"ZXCVBNM\"), \"mnbvcxz\", '\"ZXCVBNM\" => \"mnbvcxz\"');\nassert.equal(convertor.transformString(\"ASDFGHJKLZXCV\"), \"vcxzlkjhgfdsa\", '\"ASDFGHJKLZXCV\" => \"vcxzlkjhgfdsa\"');",
               "err": {},
-              "uuid": "974193ab-00bb-47cd-a2e7-4e1d10d6170a",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "a9880615-8faa-473b-94f7-2a5fc3fec25f",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             },
@@ -235,8 +235,8 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"aDffAkOO\"), \"ooKaFFdA\", '\"aDffAkOO\" => \"ooKaFFdA\"');\nassert.equal(convertor.transformString(\"ljGNbVfdREuimjHSy\"), \"YshJMIUerDFvBngJL\", '\"ljGNbVfdREuimjHSy\" => \"YshJMIUerDFvBngJL\"');",
               "err": {},
-              "uuid": "36ce4f91-fee0-4329-b5ec-6f04b09b5307",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "43c8b2ab-8d08-49f5-9809-e9274edcb2a5",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             },
@@ -253,20 +253,20 @@
               "context": null,
               "code": "assert.equal(convertor.transformString(\"aDf3fAkO2O0\"), \"0o2oKaF3FdA\", '\"aDf3fAkO2O0\" => \"0o2oKaF3FdA\"');\nassert.equal(convertor.transformString(\"ljG443NbVfdRE65uimjH78Sy\"), \"Ys87hJMIU56erDFvBn344gJL\", '\"ljG443NbVfdRE65uimjH78Sy\" => \"Ys87hJMIU56erDFvBn344gJL\"');",
               "err": {},
-              "uuid": "fe0b5b4e-8b6d-4c77-a0cf-8bb4506c39c8",
-              "parentUUID": "e190b33c-4dda-4a51-b443-f6e454de330d",
+              "uuid": "4efacf76-6e32-473d-8fe9-05f0dcdb3a61",
+              "parentUUID": "d5b3cf57-a0d3-4533-8275-fe0adeeb9b3f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "56dc289f-7df0-422a-9efe-71643c947066",
-            "07464f8d-580a-418d-9b7f-ac68c0692162",
-            "3efebd9e-73fc-4bda-885e-fff6a7647b4e",
-            "974193ab-00bb-47cd-a2e7-4e1d10d6170a",
-            "36ce4f91-fee0-4329-b5ec-6f04b09b5307",
-            "fe0b5b4e-8b6d-4c77-a0cf-8bb4506c39c8"
+            "f6e44a95-ebd0-435b-b314-d25eea28c41c",
+            "56972d51-882b-4fbf-8ac5-061cb9e5e73b",
+            "a00b13cc-1035-4cbc-984d-b5fc7ce11854",
+            "a9880615-8faa-473b-94f7-2a5fc3fec25f",
+            "43c8b2ab-8d08-49f5-9809-e9274edcb2a5",
+            "4efacf76-6e32-473d-8fe9-05f0dcdb3a61"
           ],
           "failures": [],
           "pending": [],
@@ -277,7 +277,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "d3d7095c-4002-4c9e-8a55-8ceccb6c8cdf",
+          "uuid": "babe1bc1-8de3-4150-9a17-62780ca63779",
           "title": "Check appended data in the json output file",
           "fullFile": "/Users/brunoh/assignment/typescript_source/test.spec.ts",
           "file": "/typescript_source/test.spec.ts",
@@ -288,7 +288,7 @@
               "title": "multiple appends",
               "fullTitle": "Check appended data in the json output file multiple appends",
               "timedOut": false,
-              "duration": 4,
+              "duration": 6,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -297,26 +297,26 @@
               "context": null,
               "code": "let convertorTestBlock2 = new CLIConverter_1.CLIConvertor(\"./tests/testoutput.json\");\nconvertorTestBlock2.clearOutputFile();\nconvertorTestBlock2.appendToJson({ \"input\": \"Bruno1999\", \"output\": \"9991ONURb\", \"duration\": 10 });\nconvertorTestBlock2.appendToJson({ \"input\": \"1999\", \"output\": \"9991\", \"duration\": 1 });\nlet jsonOutput = fs.readFileSync(convertorTestBlock2.targetJsonPath, \"utf8\");\nlet jsonParsed = JSON.parse(jsonOutput);\nassert.equal(jsonParsed.length, 2);\nassert.equal(Object.keys(jsonParsed[0]).length, 3, \"not 3 keys in json\");\nassert.equal(jsonParsed[0].input, \"Bruno1999\", \"incorrect input key value\");\nassert.equal(jsonParsed[0].output, \"9991ONURb\", \"incorrect output key value\");\nassert.equal(jsonParsed[0].duration, 10, \"duration not inside json\");\nassert.equal(Object.keys(jsonParsed[1]).length, 3, \"not 3 keys in json\");\nassert.equal(jsonParsed[1].input, \"1999\", \"incorrect input key value\");\nassert.equal(jsonParsed[1].output, \"9991\", \"incorrect output key value\");\nassert.equal(jsonParsed[1].duration, 1, \"duration not inside json\");",
               "err": {},
-              "uuid": "4a42c11b-e539-4ec7-b2c6-f3cc5bf3a62d",
-              "parentUUID": "d3d7095c-4002-4c9e-8a55-8ceccb6c8cdf",
+              "uuid": "5575a235-41c6-439f-a475-0c2ac645eb68",
+              "parentUUID": "babe1bc1-8de3-4150-9a17-62780ca63779",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4a42c11b-e539-4ec7-b2c6-f3cc5bf3a62d"
+            "5575a235-41c6-439f-a475-0c2ac645eb68"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4,
+          "duration": 6,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "7e0fd3a2-6512-48e2-8dca-e83ea365cea3",
+          "uuid": "512eac9f-b42c-44f6-bd12-16bdf5324161",
           "title": "Application 3 iteration",
           "fullFile": "/Users/brunoh/assignment/typescript_source/test.spec.ts",
           "file": "/typescript_source/test.spec.ts",
@@ -336,15 +336,15 @@
               "context": null,
               "code": "let jsonOutput = fs.readFileSync(convertorTestBlock3.targetJsonPath, \"utf8\");\nlet jsonParsed = JSON.parse(jsonOutput);\nassert.equal(jsonParsed.length, 3);\nassert.equal(Object.keys(jsonParsed[0]).length, 3, \"not 3 keys in json\");\nassert.equal(jsonParsed[0].input, \"Bruno1999\", \"incorrect input key value\");\nassert.equal(jsonParsed[0].output, \"9991ONURb\", \"incorrect output key value\");\nassert.equal(\"duration\" in jsonParsed[0], true, \"duration not inside json\");\nassert.equal(Object.keys(jsonParsed[1]).length, 3, \"not 3 keys in json\");\nassert.equal(jsonParsed[1].input, \"1999\", \"incorrect input key value\");\nassert.equal(jsonParsed[1].output, \"9991\", \"incorrect output key value\");\nassert.equal(\"duration\" in jsonParsed[1], true, \"duration not inside json\");\nassert.equal(Object.keys(jsonParsed[2]).length, 3, \"not 3 keys in json\");\nassert.equal(jsonParsed[2].input, \"Bruno\", \"incorrect input key value\");\nassert.equal(jsonParsed[2].output, \"ONURb\", \"incorrect output key value\");\nassert.equal(\"duration\" in jsonParsed[2], true, \"duration not inside json\");",
               "err": {},
-              "uuid": "99305c0e-22cc-42b5-9e2b-48e932cb9671",
-              "parentUUID": "7e0fd3a2-6512-48e2-8dca-e83ea365cea3",
+              "uuid": "dad13bc9-851b-4e1e-82f2-39b186499b64",
+              "parentUUID": "512eac9f-b42c-44f6-bd12-16bdf5324161",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "99305c0e-22cc-42b5-9e2b-48e932cb9671"
+            "dad13bc9-851b-4e1e-82f2-39b186499b64"
           ],
           "failures": [],
           "pending": [],
