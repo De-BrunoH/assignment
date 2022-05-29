@@ -1,7 +1,7 @@
 Assignment
 simple input-output string convertor
 
-to install dependancies, run in assignement directory in terminal:  ./installDependencies.sh
+to install dependancies, run in assignment directory in terminal:  ./installDependencies.sh
 
 for file compilation, run: ./build.sh
 for converter app launch, run: ./run.sh
